@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React from 'react';
+import Navbar from './Navbar/navbar.js';
+import Footer from './Footer/footer.js';
+import AboutUs from './AboutUs/aboutus.js';
+import './App.css'; // Assuming you have some CSS file for styling
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <AboutUs />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
